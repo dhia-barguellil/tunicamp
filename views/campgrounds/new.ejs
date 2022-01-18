@@ -1,7 +1,7 @@
 <% layout('layouts/boilerplate.ejs') %>
 <div class="row">
-  <h1 class="text-center">New Campground</h1>
-  <div class="col-md-6 offset-md-3 mt-5">
+  <h1 class="text-center p-3">New Campground</h1>
+  <div class="col-md-6 offset-md-3 mt-3">
     <form
       action="/campgrounds"
       method="POST"
@@ -77,10 +77,10 @@
         </div>
       </div>
       <!-- BUTTON -->
-      <div class="mb-3">
+      <div class="mb-3 d-grid gap-2 d-md-inline-block">
         <button class="btn btn-success">Add Campground</button>
+        <a href="/campgrounds" class="btn btn-secondary">Cancel</a>
       </div>
     </form>
-    <a href="/campgrounds">Cancel</a>
   </div>
 </div>
